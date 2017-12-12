@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		var images=document.getElementsByTagName("img");
+		function showbig(n){
+			for (var i =0 ;i<=5; i++) {
+				images[i].style.border="0px";
+			}
+			var btn = document.getElementById(n);
+			btn.style.border="2px solid orange";
+			document.getElementById("img").src=btn.src;
+		}
+	</script>
+	<style type="text/css">
+		img{width: 150px;}
+		#img{width: 772px;}
+	</style>
+</head>
+<body>
+	<table>
+		<tr id="nav">
+			<td><img src="images/s2.jpg" onclick="showbig('no1')" id="no1"></td>
+			<td><img src="images/s3.jpg" onclick="showbig('no2')" id="no2"></td>
+			<td><img src="images/s4.jpg" onclick="showbig('no3')" id="no3"></td>
+			<td><img src="images/s5.jpg" onclick="showbig('no4')" id="no4"></td>
+			<td><img src="images/s6.jpg" onclick="showbig('no5')" id="no5"></td>
+		</tr>
+	</table>
+	<img src="images/s1.jpg" id="img">
+</body>
+</html>
